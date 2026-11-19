@@ -1,0 +1,39 @@
+{
+  "name": "no-mercy-2089",
+  "productName": "NO MERCY 2089",
+  "version": "0.0.1",
+  "description": "NO MERCY 2089 - Miami no perdona.",
+  "private": true,
+  "main": "electron/main.cjs",
+  "author": "NO MERCY 2089",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "electron:dev": "npm run build && electron .",
+    "electron:build": "npm run build && electron-builder --win --publish never"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "electron": "^31.7.0",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.2"
+  },
+  "build": {
+    "appId": "com.nomercy2089.game",
+    "productName": "NO MERCY 2089",
+    "directories": { "output": "release" },
+    "files": ["dist/**/*", "electron/**/*", "package.json"],
+    "win": {
+      "target": [{ "target": "portable", "arch": ["x64"] }],
+      "artifactName": "NO-MERCY-2089-${version}.exe"
+    }
+  }
+}
