@@ -1,6 +1,9 @@
 import Phaser from 'phaser';
 import { BASE_HEIGHT, BASE_WIDTH } from './core/version';
-import { TestScene } from './game/scenes/TestScene';
+import { ExitScene } from './game/scenes/ExitScene';
+import { MenuScene } from './game/scenes/MenuScene';
+import { PlayPlaceholderScene } from './game/scenes/PlayPlaceholderScene';
+import { SettingsScene } from './game/scenes/SettingsScene';
 
 new Phaser.Game({
   type: Phaser.AUTO,
@@ -16,5 +19,5 @@ new Phaser.Game({
     zoom: Phaser.Scale.MAX_ZOOM
   },
   fps: { target: 60 },
-  scene: [TestScene]
+  scene: [MenuScene, SettingsScene, PlayPlaceholderScene, ExitScene]
 });
