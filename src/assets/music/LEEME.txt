@@ -1,0 +1,22 @@
+MÚSICA DE LA CINEMÁTICA
+=======================
+Deja aquí tus canciones (mp3, ogg o wav). Cada una suena en la escena que se llame igual que el archivo:
+
+  escena-1.mp3   ->  Miami 2089 desde la bahía (apertura)
+  escena-2.mp3   ->  Little Havana 2078, el chaval con su cafecito
+  escena-3.mp3   ->  La torre de oficinas, su madre limpiando
+  escena-4.mp3   ->  El implante de su madre
+  escena-5.mp3   ->  La calle de neón de madrugada
+  escena-6.mp3   ->  La oferta en el callejón
+  escena-7.mp3   ->  El taller y el escáner
+  escena-8.mp3   ->  La carrera de los encargos
+  escena-9.mp3   ->  La noche en que salió mal
+  escena-10.mp3  ->  El autobús
+  escena-11.mp3  ->  El taller en 2089 y la llamada
+
+No hace falta tener las once. Si una escena no tiene archivo, sigue sonando la canción anterior
+(o ninguna, si todavía no ha sonado ninguna). La música se repite en bucle y entra y sale con un fundido.
+Después de añadir archivos hay que subirlos a GitHub como siempre (carpeta src).
+
+OJO: antes la cinemática tenía 6 escenas y ahora tiene 11. Si ya habías nombrado archivos con la numeración
+antigua, renómbralos según esta lista.
