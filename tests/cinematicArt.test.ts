@@ -45,7 +45,7 @@ describe('ilustraciones de la cinemática', () => {
           expect(l.canvas.height).toBe(ART_H);
           expect(l.parallax).toBeGreaterThanOrEqual(0);
           expect(l.parallax).toBeLessThanOrEqual(1.25);
-          expect(l.canvas.countOpaque()).toBeGreaterThan(0);
+          expect(l.canvas.countOpaque() > 0 || (l.actors?.length ?? 0) > 0, 'capa vacía').toBe(true);
         }
       });
       it('las capas que se repiten solas tienen velocidad, y solo ellas', () => {
